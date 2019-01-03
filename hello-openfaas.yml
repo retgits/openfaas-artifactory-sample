@@ -1,0 +1,8 @@
+provider:
+  name: faas
+  gateway: http://openfaas-gateway:31112
+functions:
+  hello-openfaas:
+    lang: golang-http
+    handler: ./hello-openfaas
+    image: artifactory-server/docker/hello-openfaas:latest
